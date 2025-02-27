@@ -1,0 +1,14 @@
+  div.dot {
+    height: 250px;
+    width: 250px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: inline-block;
+  position: relative;
+}
+
+div.dot:before {
+  content:"Hello.";
+  position: absolute;
+  top:-2em;
+}
