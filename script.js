@@ -1,4 +1,4 @@
-const button1 = document.getElementById("button1");
+const button = document.getElementById("button1");
 
 button1.addEventListener("click", yell_at_user);
 

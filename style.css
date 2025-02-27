@@ -1,14 +1,18 @@
-  div.dot {
+button {
     height: 250px;
     width: 250px;
     background-color: #ff0000;
-    border-radius: 50%;
+    border-radius: 100%;
     display: inline-block;
   position: relative;
+  font-size: 30px;
 }
 
-div.dot:before {
-  content:"Hello.";
-  position: absolute;
-  top:-2em;
-}
+button:hover {
+    background-color: #f54b48;
+    color: white;
+  }
+
+  button {
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.2);
+  }
