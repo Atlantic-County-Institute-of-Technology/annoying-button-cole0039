@@ -12,7 +12,6 @@ We’ve shown you already how to interact with JavaScript & Change Buttons, now 
 
 ### Making your Annoying Button more Annoying-er:
 
-
 You’ve got a budget of 5 points, you can spend more, but you need at least that total amount in additional features. 
   
 
