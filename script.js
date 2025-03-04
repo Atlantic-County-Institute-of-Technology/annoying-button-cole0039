@@ -1,33 +1,23 @@
-const button = document.getElementById("myButton");
+const button = document.getElementById("button1");
 const textBox = document.getElementById("textBox");
 let clickCount = 0;
 let moves = 0;
 
 button.addEventListener("click", function() {
     clickCount++;
-    textBox.style.display = "block";
+    
     if (clickCount === 1) {
         textBox.textContent = "Please stop.";
         startMovingButton();
-    } else if (clickCount === 2) {
-        textBox.textContent = "You've clicked twice!";
-        button.disabled = true;
+    } else if (clickCount === 5) {
+        textBox.textContent = "You are starting to make me mad.";
+    } else if (clickCount === 10) {
+        textBox.textContent = "Look this is getting absurd"
+        button.disabled = false;
+    } else if (clickCount === 20) {
+        button.classList.add("angry");
+        textBox.textContent = "This is your last chance...";
     }
 });
 
-function startMovingButton() {
-    const maxMoves = 5;
-    const interval = setInterval(() => {
-        if (moves < maxMoves) {
-            const x = Math.random() * (window.innerWidth - button.offsetWidth);
-            const y = Math.random() * (window.innerHeight - button.offsetHeight);
-            button.style.left = x + 'px';   // Fixed to use proper string concatenation
-            button.style.top = y + 'px';     // Fixed to use proper string concatenation
-            moves++;
-        } else {
-            clearInterval(interval);
-        }
-    }, 1000);
-}
 
-button.style.position = 'absolute';

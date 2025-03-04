@@ -19,9 +19,13 @@ body {
   border-radius: 5px;
   position: relative;
   z-index: 1;
+  border: 2px solid red;
+  height: 100px;
+  width: 500px;
+  display: block;
 }
 
-#myButton {
+.button1 {
   font-size: 1.5em;
   font-weight: bold;
   background-color: red;
@@ -31,13 +35,24 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.1s ease, background-color 0.3s;
-  position: absolute;
 }
 
-#myButton:hover {
+.button1:hover {
   background-color: #ff4d4d;
 }
 
-#myButton:active {
+.button1:active {
   transform: translateY(4px);
+}
+
+.angry{
+  animation: angry-move   0.5s linear infinite;
+}
+@keyframes angry-move{
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(100px);
+  }
 }
