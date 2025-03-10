@@ -55,3 +55,20 @@ body {
   }
 }
 
+.angry2{
+  animation: size   2s linear infinite;
+}
+@keyframes size{
+  0% { height: 10%;
+       width: 10%
+  }
+  25% {
+    height: 5%;
+    width: 5%;
+  }
+
+  75% {
+    height: 100%;
+    width: 100%;
+  }
+}
