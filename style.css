@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  /*This sets the font for the rest of the program untill changed*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +20,7 @@ body {
   right: -175px;
   border: 2px solid rgb(0, 0, 0);
 }
-
+/*This is the css element of the text box that is above the button*/
 .button1 {
   font-size: 1.5em;
   font-weight: bold;
@@ -31,15 +32,15 @@ body {
   cursor: pointer;
   transition: transform 0.1s ease, background-color 0.3s;
 }
-
+/*This is the css way for the button it just shows the padding the font size the color and the animation that makes it click*/
 .button1:hover {
   background-color: #ff4d4d;
 }
-
+/*This is the hover color it makes it slightly lighter red when hovered*/
 .button1:active {
   transform: translateY(4px);
 }
-
+/*This helps the button move up and down.*/
 .angry{
   animation: angry-move   .5s linear infinite;
 }
@@ -54,7 +55,7 @@ body {
     transform: translateX(100px);
   }
 }
-
+/*This is a animation that moves the button to the right and left 100 pixels.*/
 .angry2{
   animation: size   2s linear infinite;
 }
@@ -72,3 +73,4 @@ body {
     width: 100%;
   }
 }
+/*This changes the size of the button to confuse the people clicking it and disorintate them.*/

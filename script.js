@@ -1,15 +1,14 @@
 const button = document.getElementById("button1");
 const textBox = document.getElementById("textBox");
 let clickCount = 0;
-let moves = 0;
-
+/*sets the element id of button1 and textbox in js, and sets clickcount to 0*/
 let noise = new Audio('/assets/Click.mp3');
 noise.playbackRate=3;
-
+/*This sets up the click noise*/
 button.addEventListener("click", function() {
     clickCount++;
     textBox.style.display = "block";
-
+/*This lets the script to be able to count if they clicked the button or not.*/
 
     if (clickCount === 1) {
         textBox.textContent = "Please stop.";
@@ -35,3 +34,4 @@ button.addEventListener("click", function() {
         textBox.textContent = "Look"
     }
   });
+/*These are all the else if's and classlist stuff that makes the button funtiional and lets it work on the website.*/
